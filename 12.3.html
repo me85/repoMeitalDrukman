@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12.3</title>
+
+    <style>
+      #conteiner {
+        margin: auto;
+        max-width: none;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        padding-top: 20px;
+        box-sizing: border-box;
+      }
+
+      #header {
+        background: orange;
+        border: 1px solid black;
+        width: 100vw;
+        height: 20vh;
+        margin: 5px;
+        text-align: center;
+      }
+      #side {
+        background: greenyellow;
+        border: 1px solid black;
+        width: 37%;
+        height: 50vh;
+        margin: 5px;
+        float: left;
+      }
+      #main {
+        background: purple;
+        border: 1px solid black;
+        width: 58%;
+        height: 50vh;
+        margin: 5px;
+        text-align: right;
+        float: right;
+      }
+      #fotter {
+        background: blue;
+        border: 1px solid black;
+        width: 100vw;
+        height: 30vh;
+        margin: 6px;
+        text-align: center;
+      }
+      #clear {
+        clear: both;
+      }
+      @media (max-width: 500px) {
+        #side {
+          display: none;
+        }
+
+        #main {
+          width: 100%;
+          height: 50vh;
+          margin: 5px;
+          text-align: right;
+        }
+      }
+
+      /* @media (min-width: 768px) and (max-width: 1200px) {
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="conteiner">
+      <div id="header">header</div>
+      <div id="side">side</div>
+      <div id="main">main</div>
+      <div id="clear"></div>
+      <div id="fotter">fotter</div>
+    </div>
+  </body>
+</html>
