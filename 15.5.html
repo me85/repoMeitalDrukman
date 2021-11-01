@@ -11,11 +11,10 @@
 
 .flex-container {
         display: flex;
-        justify-content:space-between;   
-        height: 25vh;
+        justify-content:space-between; 
+        align-items: center;  
+        height: 10vh;
         background-color: blue;
-        flex-direction: row;
-        align-items: center;
       }
       .navUl{
         display: flex;
@@ -61,31 +60,7 @@
       /* navbar for mobile */
 
       @media (max-width: 500px) {
-      .flex-container {
-        display: flex;
-        height: 35vh;
-        background-color: blue;
-        align-items: center;
-        justify-content:flex-start;
-      }
 
-      .navUl{
-        flex-direction: column;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: space-around;
-      }
-      .nav-links{
-        text-align: center;
-      }
-        
-      #title{
-  
-      align-self:flex-start;
-
-      }
 
       .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -93,17 +68,34 @@
         width: 100%;
         margin: auto;
       }
+      .flex-container {
+        display: flex;
+        height: 40vh;
+        flex-direction: column;
+        background-color: blue;
+        align-items: center;
+        justify-content:center;
+      }
+
+      .navUl{
+        flex-direction: column;
+        list-style-type: none;
+        display: flex;
 
     }
-      
 
-      /* flex-grow: 1; */
-      /* flex-wrap: wrap; */
+    #logo{
+
+      height: 72px;
+    }
+      
+  }
+     
     </style>
   </head>
   <body>
     <div class="flex-container">
-      <div id="title">APPLESEEDS</div>
+      <div id="logo" ><h6 id="title">APPLESEEDS</h6> </div>
       <ul class="navUl">
         <li class="nav-links"><a href="#home">Home</a></li>
         <li class="nav-links"><a href="#news">About</a></li>
